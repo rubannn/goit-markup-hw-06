@@ -1,0 +1,194 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em; /* 2% */
+    color: #434455;
+    background-color: #FFFFFF;
+    
+}
+
+.hero-title { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 56px;
+    letter-spacing: 0.02em; /* 2% */
+    line-height: 60px;
+}
+
+.section-title { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 36px;
+    letter-spacing: 0.02em; /* 2% */
+}
+
+.feature-title { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    letter-spacing: 0.02em; /* 2% */
+}
+
+.hero-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em; /* 4% */
+}
+
+.nav-logo,
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; 
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    
+}
+
+.nav-logo span,
+.footer-logo span {
+    color: #2e2f42;
+}
+
+.nav-link,
+.contact-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em; /* 4% */
+    text-decoration: underline;
+    font-style: normal;
+}
+/* Оформлення хедера */
+.header {
+    background-color: #f8f8f8; /* C11: Відповідність кольору макету */
+    padding: 20px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500; /* C12: Вказана вага шрифту */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #0056b3; /* C3: Зміна кольору при ховері та фокусі */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #007BFF; /* C4: Зміна кольору при ховері та фокусі */
+}
+
+.nav-link:hover,
+.contact-link:hover,
+.nav-link:focus,
+.contact-link:focus {
+    text-decoration: none; /* Додати для послідовності */
+}
+
+/* Оформлення головного контенту */
+.hero-title {
+    font-size: 36px; /* C9: Розмір шрифту відповідає макету */
+    font-weight: 700;
+    color: #333; /* C11: Відповідність кольору */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF; 
+}
+
+/* Оформлення секцій */
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature-title,
+.team-member-name,
+.portfolio-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-description,
+.team-member-role,
+.portfolio-item-category,
+.footer-text {
+    font-size: 18px; /* C9: Розмір шрифту */
+    font-weight: 500;
+    color: #666; /* C11: Колір відповідає макету */
+}
+
+.footer {
+    background-color: #2e2f42; 
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text {
+    font-family: "Raleway", sans-serif; 
+    line-height: 1.5; 
+    color: var(--color-variable, #f4f4fd);
+    letter-spacing: 0.02em; 
+    
+}
+
+/* Оформлення зображень */
+.team-photo,
+.portfolio-photo {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
