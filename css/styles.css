@@ -1,94 +1,129 @@
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
+    /* Regular */
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.02em; /* 2% */
+    letter-spacing: 0.02em;
+    /* 2% */
     color: #434455;
     background-color: #FFFFFF;
-    
+
 }
 
-.hero-title { 
+.hero-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
+    /* Bold */
     font-size: 56px;
-    letter-spacing: 0.02em; /* 2% */
+    letter-spacing: 0.02em;
+    /* 2% */
     line-height: 60px;
 }
 
-.section-title { 
+.section-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
+    /* Bold */
     font-size: 36px;
-    letter-spacing: 0.02em; /* 2% */
+    letter-spacing: 0.02em;
+    /* 2% */
 }
 
-.feature-title { 
+.feature-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500; /* Medium */
+    font-weight: 500;
+    /* Medium */
     font-size: 20px;
-    letter-spacing: 0.02em; /* 2% */
+    letter-spacing: 0.02em;
+    /* 2% */
 }
 
 .hero-button {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500; /* Medium */
+    font-weight: 500;
+    /* Medium */
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.04em; /* 4% */
+    letter-spacing: 0.04em;
+    /* 4% */
 }
 
 .nav-logo,
 .footer-logo {
     font-family: "Raleway", sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 18px;
     line-height: 17px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    
+
 }
 
-.nav-logo span,
+.nav-logo span {
+    color: #2E2F42;
+}
+
 .footer-logo span {
-    color: #2e2f42;
+    color: #F4F4FD;
+}
+
+.header, .nav {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-link,
 .contact-link {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
+    /* Regular */
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.04em; /* 4% */
+    letter-spacing: 0.04em;
+    /* 4% */
     text-decoration: underline;
     font-style: normal;
 }
+
 /* Оформлення хедера */
 .header {
-    background-color: #f8f8f8; /* C11: Відповідність кольору макету */
+    background-color: #f8f8f8;
+    /* C11: Відповідність кольору макету */
     padding: 20px 0;
 }
 
-.nav-list {
+.nav-list,
+.contact-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .nav-link {
     color: #007BFF;
     text-decoration: none;
-    font-weight: 500; /* C12: Вказана вага шрифту */
+    font-weight: 500;
+    /* C12: Вказана вага шрифту */
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #0056b3; /* C3: Зміна кольору при ховері та фокусі */
+    color: #0056b3;
+    /* C3: Зміна кольору при ховері та фокусі */
+}
+
+.nav-list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    /* C2: Відступи між елементами */
 }
 
 .contact-list {
@@ -106,21 +141,25 @@ body {
 
 .contact-link:hover,
 .contact-link:focus {
-    color: #007BFF; /* C4: Зміна кольору при ховері та фокусі */
+    color: #007BFF;
+    /* C4: Зміна кольору при ховері та фокусі */
 }
 
 .nav-link:hover,
 .contact-link:hover,
 .nav-link:focus,
 .contact-link:focus {
-    text-decoration: none; /* Додати для послідовності */
+    text-decoration: none;
+    /* Додати для послідовності */
 }
 
 /* Оформлення головного контенту */
 .hero-title {
-    font-size: 36px; /* C9: Розмір шрифту відповідає макету */
+    font-size: 36px;
+    /* C9: Розмір шрифту відповідає макету */
     font-weight: 700;
-    color: #333; /* C11: Відповідність кольору */
+    color: #FFFFFF;
+    /* C11: Відповідність кольору */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -136,12 +175,17 @@ body {
     border-radius: 5px;
     font-weight: 500;
     font-size: 16px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #404BBF; 
+    background-color: #404BBF;
+}
+
+.hero {
+    background-color: #2E2F42;
+    text-align: center;
 }
 
 /* Оформлення секцій */
@@ -165,23 +209,25 @@ body {
 .team-member-role,
 .portfolio-item-category,
 .footer-text {
-    font-size: 18px; /* C9: Розмір шрифту */
+    font-size: 18px;
+    /* C9: Розмір шрифту */
     font-weight: 500;
-    color: #666; /* C11: Колір відповідає макету */
+    color: #666;
+    /* C11: Колір відповідає макету */
 }
 
 .footer {
-    background-color: #2e2f42; 
+    background-color: #2e2f42;
     text-align: center;
     padding: 20px;
 }
 
 .footer-text {
-    font-family: "Raleway", sans-serif; 
-    line-height: 1.5; 
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
     color: var(--color-variable, #f4f4fd);
-    letter-spacing: 0.02em; 
-    
+    letter-spacing: 0.02em;
+
 }
 
 /* Оформлення зображень */
@@ -191,4 +237,66 @@ body {
     margin-bottom: 10px;
 }
 
+.team,
+.features,
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.team {
+    text-align: center;
+    background-color: #F4F4FD;
+    height: 732px;
+}
+
+.team-list {
+    display: flex;
+    /* Делает список горизонтальным */
+    list-style: none;
+    /* Убирает маркеры списка */
+    padding: 0;
+    /* Убирает отступы */
+    gap: 10px;
+    /* Добавляет отступы между элементами */
+}
+
+.team-list li {
+    background-color: #FFFFFF;
+    padding: 32px;
+    gap: 32px;
+}
+
+.features-list {
+    display: flex;
+    /* Робить список горизонтальним */
+    list-style: none;
+    /* Убирає маркери списку */
+    padding: 0;
+    /* Убирає відступи */
+    gap: 20px;
+    /* Додає відступи між елементами */
+}
+
+.features-list li {
+    width: 264px;
+}
+
+
+.portfolio-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1128px;
+}
+
+.portfolio-list li {
+    border: 1px solid #E0E0E0;
+    width: 360px;
+    /* Фиксированная ширина */
+    box-sizing: border-box;
+    /* Чтобы padding не увеличивал ширину */
+}
