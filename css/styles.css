@@ -217,9 +217,9 @@ body {
 .team-member-role,
 .portfolio-item-category,
 .footer-text {
-    font-size: 18px;
+    font-size: 16px;
     /* C9: Розмір шрифту */
-    font-weight: 500;
+    font-weight: 400;
     color: #666;
     /* C11: Колір відповідає макету */
 }
