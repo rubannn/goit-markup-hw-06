@@ -21,15 +21,6 @@ body {
     line-height: 60px;
 }
 
-.section-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    /* Bold */
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    /* 2% */
-}
-
 .feature-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -58,14 +49,14 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-
+    line-height: 1.07;
 }
 
 .nav-logo span {
     color: #2E2F42;
 }
 
-.footer-logo span {
+.footer-logo-span {
     color: #F4F4FD;
 }
 
@@ -84,10 +75,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     /* Regular */
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-    /* 4% */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-decoration: underline;
     font-style: normal;
 }
@@ -107,7 +97,7 @@ body {
 }
 
 .nav-link {
-    color: #007BFF;
+    color: #2e2f42;
     text-decoration: none;
     font-weight: 500;
     /* C12: Вказана вага шрифту */
@@ -115,7 +105,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #0056b3;
+    color: #404bbf;
     /* C3: Зміна кольору при ховері та фокусі */
 }
 
@@ -127,22 +117,25 @@ body {
     /* C2: Відступи між елементами */
 }
 
+.contact-ingo {
+    font-style: normal;
+}
+
 .contact-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-style: normal;
 }
 
 .contact-link {
-    color: #333;
+    color: #434455;
     text-decoration: none;
     margin-right: 15px;
 }
 
 .contact-link:hover,
 .contact-link:focus {
-    color: #007BFF;
+    color: #404bbf;
     /* C4: Зміна кольору при ховері та фокусі */
 }
 
@@ -163,6 +156,7 @@ body {
     /* C11: Відповідність кольору */
     text-align: center;
     margin-bottom: 20px;
+    line-height: 1.07
 }
 
 .hero-button {
@@ -198,19 +192,32 @@ body {
 
 /* Оформлення секцій */
 .section-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize
 }
 
-.feature-title,
+.feature-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2e2f42;
+    margin-bottom: 10px;
+}
+
 .team-member-name,
 .portfolio-item-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
     margin-bottom: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .feature-description,
@@ -220,7 +227,7 @@ body {
     font-size: 16px;
     /* C9: Розмір шрифту */
     font-weight: 400;
-    color: #666;
+    color: #434455;
     /* C11: Колір відповідає макету */
 }
 
@@ -233,6 +240,7 @@ body {
 .footer-text {
     font-family: "Raleway", sans-serif;
     line-height: 1.5;
+    line-height: 1.17;
     color: var(--color-variable, #f4f4fd);
     letter-spacing: 0.02em;
 
