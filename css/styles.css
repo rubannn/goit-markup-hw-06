@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    
+
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -49,7 +49,6 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    line-height: 1.07;
 }
 
 .nav-logo span {
@@ -222,8 +221,7 @@ body {
 
 .feature-description,
 .team-member-role,
-.portfolio-item-category,
-.footer-text {
+.portfolio-item-category {
     font-size: 16px;
     font-weight: 400;
     color: #434455;
@@ -236,11 +234,9 @@ body {
 }
 
 .footer-text {
-    font-family: "Raleway", sans-serif;
     line-height: 1.5;
     color: var(--color-variable, #f4f4fd);
     letter-spacing: 0.02em;
-
 }
 
 /* Оформлення зображень */
