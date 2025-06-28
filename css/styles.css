@@ -45,7 +45,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 17px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -117,7 +117,7 @@ body {
     /* C2: Відступи між елементами */
 }
 
-.contact-ingo {
+.contact-info {
     font-style: normal;
 }
 
@@ -194,7 +194,7 @@ body {
 .section-title {
     font-size: 36px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 20px;
@@ -225,10 +225,8 @@ body {
 .portfolio-item-category,
 .footer-text {
     font-size: 16px;
-    /* C9: Розмір шрифту */
     font-weight: 400;
     color: #434455;
-    /* C11: Колір відповідає макету */
 }
 
 .footer {
@@ -240,7 +238,6 @@ body {
 .footer-text {
     font-family: "Raleway", sans-serif;
     line-height: 1.5;
-    line-height: 1.17;
     color: var(--color-variable, #f4f4fd);
     letter-spacing: 0.02em;
 
@@ -282,10 +279,10 @@ body {
     /* Убирает отступы */
     gap: 10px;
     /* Добавляет отступы между элементами */
+    background-color: #FFFFFF;
 }
 
 .team-list li {
-    background-color: #FFFFFF;
     padding: 32px;
     gap: 32px;
 }
