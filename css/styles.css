@@ -10,10 +10,8 @@ body {
 
 .container { 
     max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0; 
-    margin-right: 0; 
+    padding: 0 15px;    
+    margin: 0 auto; 
 }
 
 img {
@@ -54,6 +52,7 @@ img {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 76px
 }
 
 .nav-logo span {
@@ -64,10 +63,15 @@ img {
     color: #F4F4FD;
 }
 
-.header,
 .nav {        
     list-style: none;    
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header > .container {
+  display: flex;
 }
 
 .nav-link,
@@ -85,19 +89,21 @@ img {
 /* Оформлення хедера */
 .header {
     background-color: #f8f8f8;
-    /* C11: Відповідність кольору макету */    
+    border-bottom: 1px solid #e7e9fc;  
 }
 
 .nav-list,
 .contact-list {
-    list-style: none;    
+    list-style: none;
+    display: flex;
+    gap: 40px;    
 }
 
 .nav-link {
     color: #2e2f42;
     text-decoration: none;
-    font-weight: 500;
-    /* C12: Вказана вага шрифту */
+    font-weight: 500;    
+    padding: 24px 0
 }
 
 .nav-link:hover,
@@ -109,11 +115,7 @@ img {
 
 .contact-info {
     font-style: normal;
-}
-
-.contact-list {
-    list-style: none;
-    margin: 0;
+    display: flex; 
 }
 
 .contact-link {
