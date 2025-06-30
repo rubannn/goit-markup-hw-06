@@ -23,28 +23,24 @@ img {
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    /* Bold */
     font-size: 56px;
     letter-spacing: 0.02em;
-    /* 2% */    
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.07;
+    max-width: 496px;
 }
 
 .feature-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    /* Medium */
-    font-size: 20px;
+    font-size: 20px;    
+    color: #2e2f42;
     letter-spacing: 0.02em;
+    line-height: 1.2;
     /* 2% */
-}
-
-.hero-button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    /* Medium */
-    font-size: 16px;    
-    letter-spacing: 0.04em;
-    /* 4% */
+    margin-bottom: 8px; 
 }
 
 .nav-logo,
@@ -140,17 +136,6 @@ img {
     /* Додати для послідовності */
 }
 
-/* Оформлення головного контенту */
-.hero-title {
-    font-size: 56px;
-    /* C9: Розмір шрифту відповідає макету */
-    font-weight: 700;
-    color: #FFFFFF;
-    /* C11: Відповідність кольору */
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.07
-}
 
 .hero-button {
     background-color: #4D5AE5;
@@ -161,7 +146,12 @@ img {
     text-decoration: none;    
     font-weight: 500;
     font-size: 16px;
-    cursor: pointer;    
+    cursor: pointer;   
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -172,9 +162,8 @@ img {
 .hero {
     background-color: #2E2F42;    
     justify-content: center;
-    
-    
     text-align: center;
+    padding: 188px 0;
 }
 
 /* Оформлення секцій */
@@ -187,14 +176,6 @@ img {
     margin-bottom: 20px;
     text-align: center;
     text-transform: capitalize
-}
-
-.feature-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #2e2f42;
-    margin-bottom: 10px;
 }
 
 .team-member-name,
@@ -236,9 +217,9 @@ img {
 
 .team,
 .features,
-.portfolio {    
-    
+.portfolio {        
     justify-content: center;    
+    padding: 120px 0;
 }
 
 .team {
@@ -256,7 +237,9 @@ img {
 
 .features-list {
     list-style: none;
-    /* Убирає маркери списку */    
+    /* Убирає маркери списку */
+    display: flex;
+    gap: 24px;  
 }
 
 
