@@ -1,8 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px;    
     letter-spacing: 0.02em;
     color: #434455;
     background-color: #FFFFFF;
@@ -15,8 +14,7 @@ body {
     /* Bold */
     font-size: 56px;
     letter-spacing: 0.02em;
-    /* 2% */
-    line-height: 60px;
+    /* 2% */    
 }
 
 .feature-title {
@@ -32,8 +30,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     /* Medium */
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px;    
     letter-spacing: 0.04em;
     /* 4% */
 }
@@ -58,8 +55,7 @@ body {
 }
 
 .header,
-.nav {    
-    /*display: flex;*/    
+.nav {        
     list-style: none;    
     margin: 0;
 }
@@ -84,8 +80,7 @@ body {
 
 .nav-list,
 .contact-list {
-    list-style: none;
-    /*display: flex;*/    
+    list-style: none;    
 }
 
 .nav-link {
@@ -101,10 +96,6 @@ body {
     /* C3: Зміна кольору при ховері та фокусі */
 }
 
-.nav-list {
-    /*display: flex;*/
-    /* justify-content: center; */        
-}
 
 .contact-info {
     font-style: normal;
@@ -239,9 +230,7 @@ body {
     background-color: #F4F4FD;    
 }
 
-.team-list {
-    /*display: flex;*/
-    /* Делает список горизонтальным */
+.team-list {    
     list-style: none;
     /* Убирает маркеры списка */
     
@@ -250,21 +239,14 @@ body {
 
 
 .features-list {
-    /*display: flex;*/
-    /* Робить список горизонтальним */
     list-style: none;
     /* Убирає маркери списку */    
 }
 
 
-.portfolio-list {
-    /*display: flex;*/
+.portfolio-list {    
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;    
 }
 
-.portfolio-list li {
-    border: 1px solid #E0E0E0;    
-    /* Фиксированная ширина */    
-}
