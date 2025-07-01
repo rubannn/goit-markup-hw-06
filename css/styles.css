@@ -1,3 +1,4 @@
+/* global reset */
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -7,12 +8,37 @@ body {
     background-color: #FFFFFF;
 }
 
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+img {
+    display: block;
+}
+
+/* end global reset */
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
-
 
 .visually-hidden {
     position: absolute;
@@ -25,14 +51,6 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
     margin: -1px;
-}
-
-img {
-    display: block;
-}
-
-ul {
-    padding-inline-start: 0;
 }
 
 .hero-title {
