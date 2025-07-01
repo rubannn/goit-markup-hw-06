@@ -124,6 +124,11 @@ header>.container {
     align-items: center;
 }
 
+footer>.container {
+    display: flex;
+    align-items: baseline,
+}
+
 .nav-link,
 .contact-link {
     font-family: 'Roboto', sans-serif;
@@ -290,6 +295,10 @@ header>.container {
     color: var(--color-variable, #f4f4fd);
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.footer-logo-div {
+    margin-right: 120px
 }
 
 /* Оформлення зображень */
