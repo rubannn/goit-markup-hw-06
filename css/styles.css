@@ -29,6 +29,10 @@ img {
     display: block;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -238,6 +242,7 @@ header>.container {
 .team-photo,
 .portfolio-photo {
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .team,
