@@ -396,18 +396,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="container container-footer-form-group">
-                <p class="footer-div-form-group-p">
-                    Subscribe
-                </p>
-                <form class="order-form">
-                    <label class="order-form-label">
-                        <input class="order-form-input" type="email" name="email" placeholder="E-mail" required="">
+            <div class="container">
+                <p class="subscribe-text">Subscribe</p>
+                <form class="subscribe-form">
+                    <label class="subscribe-form-label">
+                        <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" required="">
                     </label>
-                    <button class="order-form-button" type="submit">
+                    <button class="subscribe-form-btn" type="submit" data-modal-open>
                         Subscribe
-                        <svg class="order-form-button-svg" width="24" height="24">
-                            <use href="./images/icons.svg#icon-subscribe">
+                        <svg class="subscribe-form-btn-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-btn-subscribe">
                             </use>
                         </svg>
                     </button>
@@ -416,11 +414,10 @@
         </div>
     </footer>
 
-    <div class="modal" style="display: none1;"> <!-- div - контейнер для модального вікна-->
-        <div class="modal-div"> <!--div - модальне вікно -->
-            <!-- кнопка Х - закрити вікно-->
+    <div class="modal" data-modal>
+        <div class="modal-div">
             <div class="modal-form-div">
-                <button type="button" class="modal-button-close">
+                <button type="button" class="modal-button-close" data-modal-close>
                     <svg class="modal-button-close-svg" width="8" height="8">
                         <use href="./images/icons.svg#icon-m-btn-close">
                         </use>
@@ -494,16 +491,16 @@
                         </label>
                     </div>
 
-                    <button class="modal-form-button">
+                    <button class="modal-form-btn-send">
                         Send
                     </button>
 
                 </form>
             </div>
 
-
         </div>
 
+        <script src="./js/modal.js"></script>
 </body>
 
 </html>
