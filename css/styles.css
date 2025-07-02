@@ -304,6 +304,7 @@ footer>.container {
 
 .team-member-role {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -563,19 +564,17 @@ footer>.container {
 .modal-button-close:hover {
     background-color: #404bbf;
     border: none;
-    /*fill: #ffffff;*/
 }
 
 .modal-button-close:focus {
     border: none;
-    /*fill: #ffffff;*/
 }
 
 .modal-button-close-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:focus .modal-button-close-svg {
+.modal-button-close:hover .modal-button-close-svg {
     fill: #ffffff;
 }
 
@@ -625,9 +624,12 @@ footer>.container {
     border-color: #4D5AE5;
 }
 
-.input-elem:focus+.modal-form-div-svg,
-.svg-checkbox {
+.input-elem:focus+.modal-form-div-svg {
     fill: #4D5AE5;
+}
+
+.svg-checkbox {
+    /* fill */
 }
 
 .modal-form-div-svg {
@@ -652,10 +654,10 @@ footer>.container {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+    /* color: rgba(46, 47, 66, 0.4); */
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    background-color: transparent;
+    /* background-color: transparent; */
     padding: 8px 16px;
     outline: transparent;
     resize: none;
