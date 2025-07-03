@@ -1,5 +1,7 @@
 :root {
     --overlay-text-color: #f4f4fd;
+    --checkbox-color: #404bbf;
+    --checkbox-fill: #f4f4fd;
 }
 
 /* global reset */
@@ -623,12 +625,9 @@ footer>.container {
     /*анімаційний ефект для зміни значень властивостей стилю*/
 }
 
-.modal-button-close:hover {
-    background-color: #404bbf;
-    border: none;
-}
-
+.modal-button-close:hover,
 .modal-button-close:focus {
+    background-color: #404bbf; 
     border: none;
 }
 
@@ -636,6 +635,7 @@ footer>.container {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-button-close:focus .modal-button-close-svg,
 .modal-button-close:hover .modal-button-close-svg {
     fill: #ffffff;
 }
@@ -716,10 +716,10 @@ footer>.container {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    /* color: rgba(46, 47, 66, 0.4); */
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    /* background-color: transparent; */
+    background-color: transparent;
     padding: 8px 16px;
     outline: transparent;
     resize: none;
@@ -756,23 +756,11 @@ footer>.container {
     fill: transparent;
 }
 
-.input-checkbox:checked .label-checkbox-span {
-    background-color: #404bbf;
+.input-checkbox:checked .label-checkbox .label-checkbox-span {
+    background-color: var(--checkbox-color);
     border: none;
-    fill: #F4F4FD;
+    fill: var(--checkbox-fill);
 }
-
-/*.input:checked .label-checkbox-span {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}*/
-
-/*.label-checkbox-span .input-checkbox:checked{
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}*/
 
 .label-checkbox-a {
     color: #4d5ae5;

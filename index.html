@@ -417,14 +417,12 @@
 
     <div class="modal" data-modal>
         <div class="modal-div">
-            <div class="modal-form-div">
-                <button type="button" class="modal-button-close" data-modal-close>
+            <button type="button" class="modal-button-close" data-modal-close>
                     <svg class="modal-button-close-svg" width="8" height="8">
                         <use href="./images/icons.svg#icon-m-btn-close">
                         </use>
                     </svg>
                 </button>
-
 
                 <p class="modal-p">
                     Leave your contacts and we will call you back
@@ -475,7 +473,7 @@
 
                     <div class="modal-form-checkbox">
                         <input class="input-checkbox visually-hidden" type="checkbox" name="user-privacy"
-                            id="user-privacy" />
+                            value="true" id="user-privacy" />
 
                         <label class="label-checkbox" for="user-privacy">
                             <span class="label-checkbox-span">
@@ -492,12 +490,10 @@
                         </label>
                     </div>
 
-                    <button class="modal-form-btn-send">
-                        Send
-                    </button>
-
+                    <button class="modal-form-btn-send">Send</button>
                 </form>
             </div>
+
         </div>
 
         <script src="./js/modal.js"></script>
