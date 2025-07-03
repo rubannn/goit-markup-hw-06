@@ -627,7 +627,7 @@ footer>.container {
 
 .modal-button-close:hover,
 .modal-button-close:focus {
-    background-color: #404bbf; 
+    background-color: #404bbf;
     border: none;
 }
 
@@ -756,7 +756,7 @@ footer>.container {
     fill: transparent;
 }
 
-.input-checkbox:checked .label-checkbox .label-checkbox-span {
+.input-checkbox:checked + .label-checkbox .label-checkbox-span {
     background-color: var(--checkbox-color);
     border: none;
     fill: var(--checkbox-fill);
