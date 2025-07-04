@@ -325,6 +325,10 @@ footer>.container {
     margin-right: 120px
 }
 
+.footer-social {
+    margin-right: 80px;
+}
+
 /* Оформлення зображень */
 .team-photo,
 .portfolio-photo {
