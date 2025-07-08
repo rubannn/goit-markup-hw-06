@@ -2,6 +2,9 @@
     --overlay-text-color: #f4f4fd;
     --checkbox-color: #404bbf;
     --checkbox-fill: #f4f4fd;
+    --mobile: 320px;
+    --tablet: 768px;
+    --desktop: 1440px;
 }
 
 /* global reset */
@@ -12,6 +15,24 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
     background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    body {
+        max-width: var(--mobile);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    body {
+        max-width: var(--tablet);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        min-width: var(--desktop);
+    }
 }
 
 ul,
@@ -46,6 +67,18 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+/* @media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 156px;
+    }
+} */
 
 .visually-hidden {
     position: absolute;
@@ -128,6 +161,12 @@ img {
 header>.container {
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+    header>.container {
+        padding: 0 156px;
+    }
 }
 
 footer>.container {
@@ -512,7 +551,8 @@ footer>.container {
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #ffffff;;
+    color: #ffffff;
+    ;
     /* background: rgba(255, 255, 255, 1); */
 }
 
@@ -760,7 +800,7 @@ footer>.container {
     fill: transparent;
 }
 
-.input-checkbox:checked + .label-checkbox .label-checkbox-span {
+.input-checkbox:checked+.label-checkbox .label-checkbox-span {
     background-color: var(--checkbox-color);
     border: none;
     fill: var(--checkbox-fill);
@@ -792,9 +832,9 @@ footer>.container {
 
 /* === Responsive background for high DPI === */
 @media (min-resolution: 192dpi) {
-    .hero {
+    .box {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero/people-office-2x.jpg);
+            url("../images/hero/people-office-2x.jpg");
     }
 }
 
