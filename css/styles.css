@@ -55,7 +55,7 @@ img {
     overflow: hidden;
     border: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     clip-path: inset(100%);
     margin: -1px;
 }
@@ -565,7 +565,7 @@ footer>.container {
 .modal.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    pointer-events: all;
 }
 
 .modal:not(.is-open) .modal {
