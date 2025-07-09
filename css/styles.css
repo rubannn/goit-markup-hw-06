@@ -822,6 +822,10 @@ footer>.container {
         flex-direction: row;
         justify-content: start;
     }
+
+    .menu-btn {
+        display: none;
+    }
 }
 
 /* Mobile (до 767px) */
@@ -918,6 +922,10 @@ footer>.container {
 
 /* Tablet (768px-1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+    .menu-btn svg {
+        display: none;
+    }
+
     .container {
         max-width: var(--tablet);
     }
@@ -977,6 +985,10 @@ footer>.container {
 
 /* Desktop (1158px+) */
 @media screen and (min-width: 1158px) {
+    .menu-btn svg {
+        display: none;
+    }
+
     .container {
         max-width: 1158px;
     }
@@ -1010,3 +1022,32 @@ footer>.container {
             url(../images/hero/people-office-2x.jpg);
     }
 }
+
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 16.8;
+    height: 14.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    /*визначення стилю курсору*/
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*анімаційний ефект для зміни значень властивостей стилю*/
+}
+
+.header .social-list {
+    display: none;
+}
+
+
+
