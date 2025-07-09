@@ -4,7 +4,7 @@
     --checkbox-fill: #f4f4fd;
     --mobile: 320px;
     --tablet: 768px;
-    --desktop: 1440px;
+    --desktop: 1158px;
 }
 
 /* global reset */
@@ -23,13 +23,13 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
     body {
         max-width: var(--tablet);
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     body {
         min-width: var(--desktop);
     }
@@ -806,13 +806,7 @@ footer>.container {
 }
 
 
-/* === Responsive background for high DPI === */
-@media (min-resolution: 192dpi) {
-    .box {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/hero/people-office-2x.jpg");
-    }
-}
+
 
 /* === Responsive layout (Mobile First approach) === */
 @media (min-width: 768px) {
@@ -824,29 +818,11 @@ footer>.container {
         flex-wrap: wrap;
     }
 
-    .contact-list {
-        flex-direction: row;
-        gap: 40px;
-    }
-
     .subscribe-form {
         flex-direction: row;
         justify-content: start;
     }
 }
-
-@media (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-
-    .team,
-    .features,
-    .portfolio {
-        padding: 120px 0;
-    }
-}
-
 
 /* Mobile (до 767px) */
 @media screen and (max-width: 767px) {
@@ -897,12 +873,35 @@ footer>.container {
         flex-direction: column;
         align-items: center;
     }
+
+    .modal-div {
+        width: 95%;
+        min-height: 584px;
+        padding: 72px 16px 24px;
+    }
+
+    .modal-form-div {
+        margin-bottom: 16px;
+    }
+
+    .modal-form-comment-textarea {
+        height: 100px;
+    }
+
+    .modal-form-btn-send {
+        width: 100%;
+    }
 }
 
 /* Tablet (768px-1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
-        max-width: 768px;
+        max-width: var(--tablet);
+    }
+
+    .contact-list {
+        flex-direction: column;
+        gap: 40px;
     }
 
     .features-list {
@@ -939,6 +938,16 @@ footer>.container {
 
 /* Desktop (1158px+) */
 @media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .team,
+    .features,
+    .portfolio {
+        padding: 120px 0;
+    }
+
     .features-list-item {
         flex-basis: calc((100% - 72px) / 4);
     }
