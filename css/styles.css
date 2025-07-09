@@ -1,4 +1,7 @@
 :root {
+    --iris: #4d5ae5;
+    --navy-blue: #2e2f42;
+    --ocean: #404bbf;
     --overlay-text-color: #f4f4fd;
     --checkbox-color: #404bbf;
     --checkbox-fill: #f4f4fd;
@@ -918,6 +921,76 @@ footer>.container {
     .modal-form-btn-send {
         width: 100%;
     }
+
+
+
+    .menu-modal .nav-list,
+    .menu-modal .contact-list {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        color: var(--navy-blue);
+    }
+
+    .menu-modal .nav-link {
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.02em;
+    }
+
+    .menu-modal .contact-link {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .menu-modal .current {
+        position: static;
+    }
+
+    .menu-modal .nav-list li:first-child a {
+        color: var(--ocean);
+    }
+
+    .menu-modal .contact-list li:first-child a {
+        color: var(--iris);
+    }
+
+    .menu-modal .nav {
+        width: 100%;
+        padding-bottom: 168px;
+    }
+
+    .menu-modal .nav-link {
+        padding: 0;
+    }
+
+    .menu-modal .nav-list {
+        font-size: 36px;
+        display: flex;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .menu-modal .contact-list {
+        font-size: 20px;
+        display: flex;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .menu-modal .contact-info,
+    .menu-modal .social-links {
+        margin-top: auto;
+    }
+
+    .menu-modal .modal-div div {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+    }
+
+
 }
 
 /* Tablet (768px-1157px) */
@@ -1045,9 +1118,6 @@ footer>.container {
     /*анімаційний ефект для зміни значень властивостей стилю*/
 }
 
-.header .social-list {
+.header .social-links {
     display: none;
 }
-
-
-

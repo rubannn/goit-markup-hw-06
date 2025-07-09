@@ -34,32 +34,33 @@
                 </ul>
             </address>
             <!-- #menu block -->
-            <ul class="social-list">
-                <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                        <svg class="social-list-icon" width="24" height="24">
+            <ul class="social-links">
+                <li class="social-link-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                        <svg class="social-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="social-link-item">
+                    <a href="https://www.twitter.com/" target="_blank" class="social-link">
+                        <svg class="social-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                        <svg class="social-list-icon" width="24" height="24">
+                <li class="social-link-item">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                        <svg class="social-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                        <svg class="social-list-icon" width="24" height="24">
+                <li class="social-link-item">
+                    <a href="https://www.linkedin.com//" target="_blank" class="social-link">
+                        <svg class="social-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                        <svg class="social-list-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
@@ -312,7 +313,8 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <img srcset="./images/portfolio/portf01.jpg 1x, ./images/portfolio/portf01-2x.jpg 2x"
-                                src="./images/portfolio/portf01.jpg" alt="photo Banking App" class="portfolio-photo" width="360">
+                                src="./images/portfolio/portf01.jpg" alt="photo Banking App" class="portfolio-photo"
+                                width="360">
                             <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -326,7 +328,8 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <img srcset="./images/portfolio/portf02.jpg 1x, ./images/portfolio/portf02-2x.jpg 2x"
-                                src="./images/portfolio/portf02.jpg" alt="photo Cashless Payment" class="portfolio-photo" width="360">
+                                src="./images/portfolio/portf02.jpg" alt="photo Cashless Payment"
+                                class="portfolio-photo" width="360">
                             <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -354,7 +357,8 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <img srcset="./images/portfolio/portf04.jpg 1x, ./images/portfolio/portf04-2x.jpg 2x"
-                                src="./images/portfolio/portf04.jpg" alt="photo Taxi Service" class="portfolio-photo" width="360">
+                                src="./images/portfolio/portf04.jpg" alt="photo Taxi Service" class="portfolio-photo"
+                                width="360">
                             <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -368,7 +372,8 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <img srcset="./images/portfolio/portf05.jpg 1x, ./images/portfolio/portf05-2x.jpg 2x"
-                                src="./images/portfolio/portf05.jpg" alt="photo Screen Illustrations" class="portfolio-photo" width="360">
+                                src="./images/portfolio/portf05.jpg" alt="photo Screen Illustrations"
+                                class="portfolio-photo" width="360">
                             <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -382,7 +387,8 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <img srcset="./images/portfolio/portf06.jpg 1x, ./images/portfolio/portf06-2x.jpg 2x"
-                                src="./images/portfolio/portf06.jpg" alt="photo Online Courses" class="portfolio-photo" width="360">
+                                src="./images/portfolio/portf06.jpg" alt="photo Online Courses" class="portfolio-photo"
+                                width="360">
                             <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -537,6 +543,17 @@
             </form>
         </div>
 
+    </div>
+
+    <div class="modal menu-modal" data-menu-modal>
+        <div class="modal-div" data-menu-content>
+            <button type="button" class="modal-button-close" data-menu-close>
+                <svg class="modal-button-close-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-m-btn-close"></use>
+                </svg>
+            </button>
+            <div data-menu-clone-container></div>
+        </div>
     </div>
 
     <script src="./js/modal.js"></script>
