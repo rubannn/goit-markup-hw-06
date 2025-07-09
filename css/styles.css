@@ -470,15 +470,6 @@ footer>.container {
     align-items: center;
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: #404bbf;
-}
-
-.social-icon {
-    fill: #f4f4fd;
-}
-
 .social-link-item {
     width: 40px;
     height: 40px;
