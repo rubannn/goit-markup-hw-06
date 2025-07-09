@@ -724,11 +724,7 @@ footer>.container {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* fill: #4D5AE5; */
 }
-
-
-/* svg {} */
 
 .modal-form-div-comment {
     margin-bottom: 16px;
@@ -848,5 +844,121 @@ footer>.container {
     .features,
     .portfolio {
         padding: 120px 0;
+    }
+}
+
+
+/* Mobile (до 767px) */
+@media screen and (max-width: 767px) {
+
+    .nav-list,
+    .contact-list {
+        display: none;
+        /* Скрываем навигацию на мобильных */
+    }
+
+    .hero {
+        padding: 72px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/people-office-mob.jpg);
+    }
+
+    .hero-title {
+        font-size: 36px;
+        max-width: 320px;
+    }
+
+    .features-list,
+    .team-list,
+    .portfolio-list {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .features-list-item,
+    .team-list-item,
+    .portfolio-list-item {
+        width: 100%;
+    }
+
+    .footer>.container {
+        flex-direction: column;
+        gap: 72px;
+        text-align: center;
+    }
+
+    .footer-logo-div,
+    .footer-social {
+        margin-right: 0;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet (768px-1157px) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .features-list {
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    .features-list-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .team-list {
+        flex-wrap: wrap;
+        row-gap: 64px;
+    }
+
+    .team-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .portfolio-list {
+        row-gap: 72px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .footer>.container {
+        flex-wrap: wrap;
+        padding: 0 108px;
+    }
+}
+
+/* Desktop (1158px+) */
+@media screen and (min-width: 1158px) {
+    .features-list-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .team-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+}
+
+/* Retina-дисплеи */
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/people-office-2x.jpg);
     }
 }
